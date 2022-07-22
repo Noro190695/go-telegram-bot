@@ -26,7 +26,7 @@ func main() {
 }
 
 func mustToken() string {
-	token := flag.String("token-bot", "", "token for access telegram bot")
+	token := flag.String("t", "", "token for access telegram bot")
 	flag.Parse()
 	if *token == "" {
 		log.Fatal("token is not corect")
